@@ -16,11 +16,13 @@ body {
 	width: 1200px;
 }
 
-.header-wrapper {
+.headersize {
 	display: flex;
-	height: 80px;
 	align-items: center;
 	justify-content: space-around;
+	margin-left: 15px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .menu {
@@ -30,6 +32,16 @@ body {
 	justify-content: flex-start;
 	margin-right: 310px;
 	flex-grow: 1;
+}
+.menuportfolio {
+	display: flex;
+	list-style: none;
+	justify-content: flex-start;
+	padding-left: 0;
+	margin-left: 15px;
+	margin-top: 0%;
+	margin-bottom: 0;
+	padding-top: 100px;
 }
 
 .contactus {
@@ -41,7 +53,7 @@ body {
 	margin-right: 12px;
 }
 .logo {
-	margin-right: 107px;
+	margin-right: 93px;
 	margin-left: 15px;
 	margin-top: 32px;
 }
@@ -111,6 +123,10 @@ body {
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: var(--brand-color5);
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 20px;
+	margin: 0;
 }
 .imgtitle2 {
 	line-height: 1.19;
@@ -136,6 +152,8 @@ body {
 	line-height: 1.87;
 	letter-spacing: 0.03em;
 	color: var(--brand-color6);
+	padding: 4px 24px 20px 24px;
+	margin: 0;
 }
 .fontsize-link {
 	font-size: 14px;
@@ -218,11 +236,37 @@ body {
 	border-color: var(--brand-color1);
 }
 .buttonlink {
+	width: 121px;
 	font-weight: 500;
 	line-height: 1.63;
 	letter-spacing: 0.03em;
-	color: var(--brand-color5);
+	background-color: var(--brand-color1);
+	border-color: var(--brand-color1);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+		0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+	color: var(--brand-color3);
+	margin-left: 8px;
 }
+
+.first {
+	width: 121px; /* tutaj powinna być pseudoklasa nth-child(4n+1) ale nie chce działać i nie mam pojęcia dlaczego.
+	Testowałem różne listy i działało. W tym zadaniu nie wychodzi... */
+	margin-left: 310px;
+}
+.second {
+	width: 93px;
+}
+.third {
+	width: 114px;
+}
+.forth {
+	width: 91px;
+}
+.fifth {
+	width: 121px;
+}
+
 .colorbutton:hover {
 	background-color: red;
 }
@@ -316,4 +360,35 @@ body {
 }
 .telfooter {
 	padding-top: 9px;
+}
+.alljob {
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	margin-left: 15px;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 50px;
+	padding-bottom: 94px;
+}
+.jobmargin {
+	margin-right: 30px;
+	display: block;
+}
+.jobpad {
+	padding-top: 30px; /* tutaj powinna być pseudoklasa nth-child(n+4) ale nie chce działać i nie mam pojęcia dlaczego.
+	Testowałem różne listy i działało. W tym zadaniu nie wychodzi... */
+}
+
+.jobmarginthird {
+	/* tutaj powinna być pseudoklasa nth-child(3n) ale nie chce działać i nie mam pojęcia dlaczego.
+	Testowałem różne listy i działało. W tym zadaniu nie wychodzi... */
+	margin-right: 0;
+	display: block;
+}
+.imageborder {
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+	width: 370px;
 }
