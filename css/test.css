@@ -11,7 +11,7 @@ body {
 	padding: 0;
 }
 :root {
-	--brand-color1: #2196f3;
+	--brand-color1: red; /* #2196f3 */
 	--brand-color2: #000000;
 	--brand-color3: #ffffff;
 	--brand-color4: #2f303a;
@@ -19,10 +19,7 @@ body {
 	--brand-color6: #757575;
 }
 .container {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1200px;
-	padding: 0 15px;
+	width: 1200px;
 }
 .section {
 	padding-top: 94px;
@@ -376,9 +373,10 @@ body {
 	margin-bottom: 0;
 	padding-top: 50px;
 	gap: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
 	margin-left: 0;
 	margin-right: 0;
-	padding-left: 0;
 }
 .jobmargin {
 	display: block;
