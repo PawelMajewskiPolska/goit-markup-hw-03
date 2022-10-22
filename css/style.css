@@ -1,3 +1,4 @@
+*,
 *::after,
 *::before {
 	margin: 0;
@@ -24,6 +25,14 @@ body {
 	max-width: 1200px;
 	padding: 0 15px;
 }
+
+.container1 {
+	margin: 0 auto;
+	padding: 0;
+}
+.container2 {
+	margin: 0 auto;
+}
 .section {
 	padding-top: 94px;
 	padding-bottom: 94px;
@@ -39,6 +48,9 @@ body {
 
 .section3 {
 	padding-bottom: 94px;
+}
+.section4 {
+	margin: 0;
 }
 
 .headersize {
@@ -71,7 +83,6 @@ body {
 	list-style: none;
 
 	justify-content: space-between;
-	margin-right: 12px;
 }
 .logo {
 	margin-right: 93px;
@@ -95,7 +106,7 @@ body {
 	letter-spacing: 0.06em;
 	color: var(--brand-color3);
 	text-align: center;
-	width: 60%;
+	max-width: 696px;
 	align-self: center;
 	padding-top: 200px;
 	margin-bottom: 30px;
@@ -116,7 +127,7 @@ body {
 	letter-spacing: 0.03em;
 	font-size: 16px;
 	color: var(--brand-color5);
-	padding-top: 20px;
+	padding-top: 30px;
 	margin: 0;
 }
 .imgtitle1 {
@@ -138,14 +149,23 @@ body {
 	padding-bottom: 30px;
 }
 .text1 {
-	width: 270px;
-	column-gap: 30px;
+	flex-basis: auto;
 	margin-top: 10px;
 	margin-bottom: 0;
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--brand-color6);
+}
+.loremipsum {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+	gap: 30px;
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 .text2 {
@@ -244,7 +264,14 @@ body {
 	letter-spacing: 0.03em;
 	padding-left: 20px;
 	padding-right: 20px;
+	padding-top: 6px;
+	padding-bottom: 6px;
 	cursor: pointer;
+	border: none;
+}
+.buttonlink:hover {
+	color: var(--brand-color3);
+	background-color: var(--brand-color1);
 }
 
 .button:not(:last-child) {
@@ -264,7 +291,7 @@ body {
 } */
 
 .colorbutton:hover {
-	background-color: red;
+	background-color: white;
 }
 .footer-background {
 	background-color: var(--brand-color4);
@@ -281,24 +308,13 @@ body {
 .pointer {
 	cursor: pointer;
 }
-.loremipsum {
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	padding: 0;
-	/* padding-left: 15px; */
-	gap: 30px;
-	margin-bottom: 0;
-	margin-top: 0;
-}
 .team {
 	font-size: 36px;
 	line-height: 1, 17;
 	letter-spacing: 0.03em;
 	color: var(--brand-color5);
 	text-align: center;
-	margin: 0;
-	margin-left: 15px;
+	margin-bottom: 50px;
 }
 .job {
 	display: flex;
@@ -311,13 +327,9 @@ body {
 	margin-bottom: 0;
 	padding-left: 0;
 }
-.jobphoto {
-	/* margin-right: 30px; */
-	margin-top: 50px;
-}
+
 .jobphoto1 {
 	margin-right: 0;
-	margin-top: 50px;
 }
 .team1 {
 	font-size: 36px;
@@ -330,11 +342,19 @@ body {
 .ourteam {
 	display: flex;
 	list-style: none;
+	align-items: center;
 	padding-top: 50px;
 	padding-left: 0;
 	gap: 30px;
 	margin-top: 0;
 	margin-bottom: 0;
+}
+.teamimages {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 0;
+	padding-right: 0;
 }
 .imgborder {
 	border-style: solid;
@@ -354,7 +374,6 @@ body {
 	margin: 0;
 }
 .footeraddress {
-	margin-left: 15px;
 	padding-bottom: 60px;
 }
 .contactusfooter {
